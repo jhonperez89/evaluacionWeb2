@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="portafolio.css">
+    <title>Carrusel</title>
+</head>
+<style>
+   body{
+       background-color: #0c1633;
+   }
+    .carrusel{
+    width: 100%;
+    padding: 30px;
+    position: relative;
+}
+.carrusel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+
+}
+.carrusel-item{
+    background-color: chocolate;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 32px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+.carrusel-item:hover ~ .carrusel-item{
+    transform: translate3d(100px, 0, 0);
+}
+.carrusel__container:hover .carrusel-item{
+    opacity: 0.3;
+}
+.carrusel__container:hover .carrusel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carrusel-item__img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carrusel-item__detalles{
+    background: linear-gradient(to top, rgba(0,0,0,0.9)100%);
+    font-size: 10px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+}
+.profile-main-proyects {
+    padding: 0 60px 50px;
+  }
+  .proyects-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1, h3 {
+      color: #1ed760;
+  }
+  h3 {
+      margin: 20px 80px 20px 80px;
+  }
+  h1 {
+      margin-left: 90px;
+  }
+  
+</style>
+<body>
+    <header>
+        <section class="header-icons-container">
+            
+            <div class="icons">
+                <h2>API Spotify</h2>
+                <a href=""><img src="img/github.png" alt="github"></a>
+                <a href="https://www.facebook.com/jhondavid.perezcorrea/"><img src="img/facebook.png" alt="facebook" title="Facebook"></a>
+                <a href=""><img src="img/spotify.png" alt="Spotify"></a>
+                <a href="index.html"><img src="img/icons8-persona-de-sexo-masculino-48.png" alt="Perfil" title="Volver al Perfil"></a>
+                <a href=""></a>
+                
+            </div>
+               
+            
+        </section>
+        
+    </header>
+    
+    <section class="carrusel">
+       
+        <h1>Incubus - Banda de Rock Alternativo</h1>
+        
+        <div class="carrusel__container" >
+            
+            <div class="carrusel-item">
+                <img class="carrusel-item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMOoVsrWO4ojSrq3zJpRmhhXFtjLdz3MiqA&usqp=CAU" alt="foto1">
+                <div class="carrusel-item__detalles">
+                    
+
+                </div>
+                <p class="carrusel-item__detalles--titulo">Titulo descriptivo</p>
+                <p class="carrusel-item__detalles--subtitulo">2019 16+20</p>
+            </div>
+            <div class="carrusel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPVMnWyOaWsByW5G8BFzKRuJxv5iGHQa8k0w&usqp=CAU" alt="">
+            </div>
+            <div class="carrusel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTM2WDfCkLB1-1dh5VVzmFWaNXs8UfTg4Kw&usqp=CAU" alt="foto1">
+            </div>
+
+            <div class="carrusel-item">
+               <img src="https://portalternativo.com/wp-content/uploads/2015/02/incubus-2015.jpg" alt="">
+            </div>
+            <div class="carrusel-item">
+               <img src="https://indiehoy.com/wp-content/uploads/2019/06/incubus-drive-1200x900.jpg" alt="">
+            </div>
+            
+            
+
+        </div>
+
+    </section>
+
+    <h3>Incubus es una banda de rock alternativo estadounidense formado por el vocalista Brandon Boyd, guitarrista Mike Einziger y batería José Pasillas cuando estudiaban juntos y después expandienron con la inclusión del bajista Alex "Dirk Lance" Katunich,y Gavin "DJ Lyfe" Koppell; ambos reemplazados finalmente por Ben Kenney y DJ Kilmore respectivamente.</h3><br><br><hr>
+
+    <article class="proyects-main-container" id="fila" >
+       
+    </article>
+
+
+    <section class="contac-main-container">
+        <div>
+          <img src="img/contacto2.png" alt="">
+          <div class="contact-left">
+            <a href="">Contacto</a>
+            <p>+57 312 879 60 70</p>
+
+          </div>
+        </div>
+        <div>
+          <img src="img/contacto.png" alt="">
+          <div class="contact-right">
+            <a href="">Escribeme</a>
+            <p>pjhon2020@gmail.com</p>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <script src="servicios2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
